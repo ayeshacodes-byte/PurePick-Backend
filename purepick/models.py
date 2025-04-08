@@ -7,7 +7,6 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
-
 class Alternatecategory(models.Model):
     alternatecategoryid = models.CharField(primary_key=True, max_length=50)
     alternatecompanyid = models.ForeignKey('Alternateproducts', models.DO_NOTHING, db_column='alternatecompanyid')
